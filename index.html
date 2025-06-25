@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Wireless Earbuds | SoundWave Pro</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  
+</head>
+<body>
+  <!-- Sticky Navigation -->
+  <nav class="sticky-nav">
+    <div class="logo">SoundWave Pro</div>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#specs">Specs</a></li>
+      <li class="cart-btn">
+        <span>Cart</span>
+        <span class="cart-count">0</span>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="glow-line"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>SoundWave Pro</h1>
+      <p>Premium Wireless Earbuds with 3D Spatial Audio</p>
+      <button class="cta-btn" id="add-to-cart">Add to Cart - $199</button>
+    </div>
+    
+    <!-- AirPods Gallery Section -->
+    <div class="airpods-gallery">
+      <div class="gallery-container">
+        <div class="gallery-slides">
+          <!-- Images injected via JS -->
+        </div>
+        <div class="gallery-dots"></div>
+        <button class="gallery-arrow prev">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+        </button>
+        <button class="gallery-arrow next">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2>Key Features</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>Active Noise Cancellation</h3>
+        <p>Block out distractions with advanced ANC.</p>
+      </div>
+      <div class="feature">
+        <h3>24-Hour Battery</h3>
+        <p>Fast charging with extended playtime.</p>
+      </div>
+      <div class="feature">
+        <h3>Sweat & Waterproof</h3>
+        <p>IPX4 rating for workouts.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Gallery Section -->
+
+  <section class="gallery-section" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="airpods image 1.jpg" alt="AirPods Front View">
+      
+      
+      <img src="air pods image 2.jpg" alt="AirPods Black Edition">
+      
+      
+      <img src="air pods image 3.jpg" alt="AirPods in Case">
+      
+      
+      <img src="air pods image 4.jpg" alt="Side View">
+      
+      
+      <img src="air pods image 5.jpg" alt="Lifestyle Shot">
+     
+      
+      <img src="airpods image 6.jpg" alt="Floating Angle">
+      
+      
+    </div>
+  </section>
+
+  <!-- Specs Section -->
+  <section class="specs-section" id="specs">
+    <h2>Technical Specifications</h2>
+    <div class="specs-grid">
+      <div class="spec">
+        <h3>Audio Technology</h3>
+        <p>Custom high-excursion Wave driver<br>Adaptive EQ<br>Active Noise Cancellation</p>
+      </div>
+      <div class="spec">
+        <h3>Battery Life</h3>
+        <p>Up to 6 hours of listening time<br>24+ hours with charging case</p>
+      </div>
+      <div class="spec">
+        <h3>Connectivity</h3>
+        <p>Bluetooth 5.3<br>H1 chip for ultra-low latency</p>
+      </div>
+      <div class="spec">
+        <h3>Water Resistance</h3>
+        <p>IPX4 (Sweat & Water Resistant)</p>
+      </div>
+      <div class="spec">
+        <h3>Compatibility</h3>
+        <p>Works with iOS, macOS, Android, Windows</p>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  </script>
+  
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

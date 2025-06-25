@@ -1,0 +1,404 @@
+/* Base Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+               "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji";
+  font-weight: 400;
+  color: #e0e0f1;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  
+  background: #171616;
+}
+
+/* Sticky Navigation */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #171616;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.cart-count {
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.glow-line {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 10%;
+  min-height: 80vh;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.cta-btn {
+  background: #83ed0b;
+  color: #000000;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+}
+
+/* 3D Product Hover Effect */
+.product-3d {
+  perspective: 1000px;
+}
+
+.earbuds {
+  width: 300px;
+  transition: transform 0.5s ease;
+}
+
+.earbuds:hover {
+  transform: rotateY(15deg) scale(1.1);
+}
+
+/* Gallery Container */
+.airpods-gallery {
+  max-width: 800px;
+  margin: 40px auto;
+  position: relative;
+  margin-bottom: 100px;
+  margin-right: -70px;
+}
+
+.gallery-slides {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-slides img {
+  width: 100%;
+  max-width: 600px;
+  display: none;
+  margin: 0 auto;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Navigation Dots */
+.gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.gallery-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d1d5db;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.gallery-dots .dot.active {
+  background: #0071e3;
+  transform: scale(1.3);
+}
+
+/* Arrows */
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.gallery-arrow svg {
+  width: 24px;
+  height: 24px;
+  fill: #1d1d1f;
+}
+
+.gallery-arrow.prev { left: 20px; }
+.gallery-arrow.next { right: 20px; }
+
+.airpods-gallery:hover .gallery-arrow {
+  opacity: 1;
+}
+
+/* Active Slide Effect */
+.gallery-slides img.active {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Swiper Carousel */
+.swiper-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Features Grid */
+.features {
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  color: #0b0b0b;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+.features h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
+}
+.feature h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.feature p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+  
+
+/* 3D Floating AirPods */
+.airpods-3d-container {
+  perspective: 1000px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.airpods-3d {
+  width: 100%;
+  transition: 
+    transform 0.5s ease-out,
+    filter 0.5s ease;
+  transform-style: preserve-3d;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.1));
+}
+
+/* Mouse-tilt effect (added via JS) */
+.airpods-3d.tilt {
+  transform: 
+    rotateX(var(--tilt-y)) 
+    rotateY(var(--tilt-x)) 
+    scale(1.05);
+}
+
+/* Video Background */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Behind all content */
+  overflow: hidden;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill screen without stretching */
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Darken video for better text contrast */
+}
+
+/* Adjust existing hero section */
+.hero {
+  position: relative; /* Bring content above video */
+  z-index: 1;
+  background: transparent; /* Remove any solid bg */
+  color: white; /* Light text for dark video */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* gallery section */
+
+.gallery-section {
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  height: 250px;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(255, 255, 255, 0.15);
+}
+
+/*spec secton*/
+.specs-section {
+  padding: 5% 10%;
+  background: #171616;
+  color: white;
+  text-align: center;
+}
+
+.specs-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.spec {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.spec:hover {
+  transform: translateY(-5px);
+  border-color: #83ed0b;
+}
+
+.spec h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #83ed0b;
+}
