@@ -74,4 +74,4 @@ A complete, responsive, and immersive landing page simulating a real e-commerce 
 ![Gallery](Section.png)
 
 ### ⚙️ Specs Section
-![Specs](Section.png)
+![Specs](Features Section.png)
