@@ -66,19 +66,21 @@ A complete, responsive, and immersive landing page simulating a real e-commerce 
 ## 📸 Screenshots
 ### Preview Section
 ![preview section](![image](https://github.com/user-attachments/assets/172c98d5-a285-4263-b788-ae5fd5d5ba8e)
-)
+
 
 ### 🖥️ Hero Section
 ![Hero Section](![image](https://github.com/user-attachments/assets/7de6070b-5025-4590-b529-159d6eeff0d9)
 
 
 ### 🖼️ Gallery
-![Gallery](![image](https://github.com/user-attachments/assets/58740e99-edf2-44d6-a5d3-556ff6a1ce5d)
-)
+![Gallery![image](https://github.com/user-attachments/assets/a325845d-8b2d-47df-8cbe-2b2d82fde066)
+
+
 
 ### ⚙️ Specs Section
 ![Specs](![image](https://github.com/user-attachments/assets/8083aff1-6586-47e1-bc7c-0a403bf2b585)
 
 ### 📀 Features Section
-![Specs](![image](https://github.com/user-attachments/assets/8083aff1-6586-47e1-bc7c-0a403bf2b585)
+![Specs](![image](https://github.com/user-attachments/assets/6a4db07b-b4c4-433f-89f0-a22a3959dc9c)
+
 
