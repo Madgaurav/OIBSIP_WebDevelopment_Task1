@@ -68,7 +68,8 @@ A complete, responsive, and immersive landing page simulating a real e-commerce 
 ![preview section](https://github.com/Madgaurav/OIBSIP_WebDevelopment_Task1/edit/main/README.md#:~:text=Website-,Preview.png)
 
 ### 🖥️ Hero Section
-![Hero Section](Hero)
+![Hero Section](![image](https://github.com/user-attachments/assets/7de6070b-5025-4590-b529-159d6eeff0d9)
+
 
 ### 🖼️ Gallery
 ![Gallery](Section.png)
