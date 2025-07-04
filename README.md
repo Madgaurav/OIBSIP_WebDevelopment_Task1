@@ -63,6 +63,11 @@ A complete, responsive, and immersive landing page simulating a real e-commerce 
 
 ---
 
+## 🚀 Live Demo
+
+Check out the live version of the project here: [Live Demo](https://madgaurav.github.io/OIBSIP_WebDevelopment_Task1/)
+---
+
 ## 📸 Screenshots
 ### Preview Section
 ![preview section](![image](https://github.com/user-attachments/assets/172c98d5-a285-4263-b788-ae5fd5d5ba8e)
